@@ -11,6 +11,8 @@ https://github.com/siddhirajpantoji/Shivani
 Each one is added in branches as completed 
 Master will have complete code and Chapter wise branches have code that is working code of the chapter 
 https://github.com/siddhirajpantoji/Shivani/tree/chapter1
+https://github.com/siddhirajpantoji/Shivani/tree/chapter2
+
 
 
 
