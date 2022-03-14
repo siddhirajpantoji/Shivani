@@ -60,3 +60,31 @@ Square s = new Square(4)
 
 == Data Interpolation == 
 https://angular.io/guide/pipes 
+
+    <li *ngFor="let hero of heroes">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </li
+
+Corresponds to 
+
+for (let i = 0 ; i <heros.length ; i++){
+    var hero = heros[i]
+}
+
+
+
+Class Binding works over here 
+https://angular.io/guide/attribute-binding#class-binding 
+
+[class.selected]="hero === selectedHero" 
+
+
+Corresoponds to 
+
+selectedHero
+for (let i = 0 ; i <heros.length ; i++){
+    var hero = heros[i]
+    if( hero === selectedHero){
+        Add CSS Selected  Class to this button
+    }
+}
