@@ -57,3 +57,6 @@ Square s = new Square(4)
 
 
 == Construtcor Flow Completed .=== 
+
+== Data Interpolation == 
+https://angular.io/guide/pipes 
