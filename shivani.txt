@@ -4,6 +4,15 @@ npm -> Node package manager -> Collection of all nodejs related Libraries
 
 ng -> angular/javascript library installed as a command 
 
+We are following Angular hero tutorial over here 
+https://angular.io/tutorial 
+
+https://github.com/siddhirajpantoji/Shivani 
+Each one is added in branches as completed 
+Master will have complete code and Chapter wise branches have code that is working code of the chapter 
+https://github.com/siddhirajpantoji/Shivani/tree/chapter1
+
+
 
 =============================================Interfaces==================
 
