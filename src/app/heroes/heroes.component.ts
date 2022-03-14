@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroesComponent implements OnInit {
 
-  constructor() { }
+  hero = ""
+  constructor() { 
+    console.log("Inside HeroesComponent Constructor ")
+    this.hero = "Shivani "
+    
+  }
 
   ngOnInit(): void {
+    console.log("Inside On Init method of HeroesComponent")
   }
 
 }

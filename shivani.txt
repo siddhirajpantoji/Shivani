@@ -13,8 +13,11 @@ interface Shape {
 	
 
 Class Square implements Shape {
-
     number length;
+    Square(len){
+        this.length = len 
+    }
+    
 
     function areaCalculate(){
         return this.length * this.length
@@ -33,4 +36,24 @@ Class Rectangle implements Shape {
 }
 
 
+Shape s = new Square(5)
+Shape r = new Rectangle(4,5)
+
+console.log(r.areaCalculate()) -> 25 
+console.log(s.areaCalculate()) -> 20
 ===================================================
+
+Lifecycle Hooks : 
+https://angular.io/guide/lifecycle-hooks 
+
+========================
+
+
+Constructor -> Initialisation of Object properties Refer Hero Component 
+
+This -> reference to all properties and methods of current object 
+
+Square s = new Square(4)
+
+
+== Construtcor Flow Completed .=== 
