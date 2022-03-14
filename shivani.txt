@@ -1,0 +1,36 @@
+node -> javascript server runtime 
+
+npm -> Node package manager -> Collection of all nodejs related Libraries 
+
+ng -> angular/javascript library installed as a command 
+
+
+=============================================Interfaces==================
+
+interface Shape {
+	areaCalculate():number
+}
+	
+
+Class Square implements Shape {
+
+    number length;
+
+    function areaCalculate(){
+        return this.length * this.length
+    }
+}
+
+
+Class Rectangle implements Shape {
+
+    number length;
+    number breadth;
+
+    function areaCalculate(){
+        return this.length * this.breadth
+    }
+}
+
+
+===================================================
