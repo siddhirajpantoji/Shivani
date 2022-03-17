@@ -105,3 +105,72 @@ for (let i = 0 ; i <heros.length ; i++){
 3. Reciepe Book -> Two parts 
     1. Editing -> Chapter 3 
     2. Service and provide Data 
+
+Broad classification 
+Level 1 - > Presentataion
+Level 2 -> Service layer 
+Level 3 -> Data Access Layer -> DAO layer 
+
+
+data layer  
+    function select(){
+Select data from table 
+    }
+    
+Service layer: 
+    getData(){
+      //Resultset list =   dao.select()
+      return mockData ; 
+      // Convert this into array 
+      //and return 
+
+    }
+
+Presentataion layer : REST API 
+    
+   list data =  Service.getData()
+
+   ngfor()
+
+GraphQl Layer : 
+    data = Service.getData()
+
+
+Read about Dependency Injection 
+https://angular.io/guide/dependency-injection 
+
+
+class Presentation {
+
+    constructor(service){
+        this.service = service
+    }
+
+    execution(){
+        this.data = this.service.getData()
+    }
+}
+
+class Service{
+
+}
+service1 = new Service()
+Presentation1  = new Presentataion(service1)
+
+https://en.wikipedia.org/wiki/Dependency_injection ng generate service hero
+
+abc :String = "xyz"; 
+Corresoponds to 
+abc = new String("xyz")
+
+
+https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html
+
+
+heroes => {this.heros = heroes}
+
+Corresoponds to 
+
+function setHeros(heros){
+    this.heros = heros
+}

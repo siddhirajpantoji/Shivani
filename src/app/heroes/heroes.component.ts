@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HEROES } from '../mock-heros';
-import {Hero} from '../hero'
+
+import { Hero } from '../hero'
+import { HeroService } from '../hero.service';
 
 
 @Component({
@@ -10,9 +11,9 @@ import {Hero} from '../hero'
 })
 export class HeroesComponent implements OnInit {
 
-  heros = HEROES;
+  heros: Hero[] = [];
   selectedHero?: Hero;
-  constructor() {
+  constructor(private heroService: HeroService) {
     console.log("Inside HeroesComponent Constructor ")
 
   }
@@ -20,11 +21,19 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("Inside On Init method of HeroesComponent")
+    this.getHeroes()
   }
 
- 
+
   onSelect(hero: Hero): void {
-    console.log("hero Selected "+hero)
+    console.log("hero Selected " + hero)
     this.selectedHero = hero;
+  }
+
+  getHeroes(): void {
+    // arrayOfheros is returned from get heros method . Just way of using variable has been changed from 
+    // this.heros = heroService.getHeroes() 
+    // To an arrow function inside Subscribe method 
+    this.heroService.getHeroes().subscribe(arrayOfheros => { this.heros = arrayOfheros });
   }
 }
