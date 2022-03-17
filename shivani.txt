@@ -99,3 +99,9 @@ for (let i = 0 ; i <heros.length ; i++){
         Add CSS Selected  Class to this button
     }
 }
+
+1. Calculator -> two way binding -> Chapter 1 ( )
+2. Shopping list -> Two way binding with textbox and play with list -> chapter2
+3. Reciepe Book -> Two parts 
+    1. Editing -> Chapter 3 
+    2. Service and provide Data 

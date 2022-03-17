@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "reciepe-name":"Chicken Biryani",
+        "image":"",
+        "description":"",
+        "ingredients":[
+            {
+                "id":1,
+                "name":"Chicken",
+                "qty":"500",
+                "unit":"gram"
+            }
+        ]
+    }
+]
