@@ -32,8 +32,8 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     // arrayOfheros is returned from get heros method . Just way of using variable has been changed from 
-    // this.heros = heroService.getHeroes() 
+     this.heros = this.heroService.getHeroes();
     // To an arrow function inside Subscribe method 
-    this.heroService.getHeroes().subscribe(arrayOfheros => { this.heros = arrayOfheros });
+    //this.heroService.getHeroes().subscribe(arrayOfheros => { this.heros = arrayOfheros });
   }
 }
