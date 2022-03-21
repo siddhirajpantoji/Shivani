@@ -174,3 +174,15 @@ Corresoponds to
 function setHeros(heros){
     this.heros = heros
 }
+
+
+
+=============================================================================
+Component 1 = Reciepe Book - > Recipes 
+Each recipe -> Ingredients 
+Reciepe list component 
+
+Recipe-detail component -> take care of each recipe display with Ingredients -> Component 2
+
+Component 3 -> Shopping Cart 
+    list of Ingredients added in card when recpie is adedd to cart 
