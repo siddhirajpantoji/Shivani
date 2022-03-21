@@ -1,0 +1,11 @@
+https://github.com/siddhirajpantoji/nodejs-training-travelex 
+https://javascript.info/
+
+Nodejs is single threaded language  
+Event based language 
+
+Threee type of variable declarations 
+1. Const  -> constant 
+2. let -> Related to scope of variable . Similar to var but inside its scope 
+3. var -> Any variable 
+
