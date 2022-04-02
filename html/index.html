@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        .bluePara {
+            color: blue;
+        }
+
+        #shivani {
+            color: green;
+        }
+    </style>
+    <script>
+        function addNumbers(){
+            console.log("Inside Add Number")
+            let num1Value = document.getElementById("num1").value
+            console.log(num1Value)
+            num1Value = parseInt(num1Value)
+            console.log(typeof(num1Value))
+            let num2Value = document.getElementById("num2").value
+            num2Value = parseInt(num2Value)
+            console.log(typeof(num2Value))
+           
+            let result = num1Value+num2Value
+            console.log(result)
+            document.getElementById("result").innerHTML = "Result is ::"+result
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>This is heading </h3>
+    <p title='Sairaj is "lazy"' style="color:rgb(255, 102, 255)">This is a paragraph
+        paragraph can be too long <br>
+        or too short
+    </p>
+    <BR>
+    <input type="text" />
+    <a HREF="https://www.w3schools.com">Visit W3Schools</a>
+    <br>
+    <img src="img_typo.jpg" alt="Girl with a jacket">
+    <pre>
+        My Bonnie lies over the ocean.
+      
+        My Bonnie lies over the sea.
+      
+        My Bonnie lies over the ocean.
+      
+        Oh, bring back my Bonnie to me.
+      </pre>
+    <mark>This is marked text </mark>
+    <em>This is em text </em>
+    <ins>This is inserted Text </ins>
+    <del>This is deleted Text </del>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        <!--Bakwas hai 
+        
+        asdasdasd
+    -->
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <bdo dir="ltr">This text will be written from right to left</bdo>
+    <!--
+    Yaha kuch bhi likh kuch nahi hoga 
+-->
+    <p class="bluePara">A red paragraph.</p>
+    <p><a href="https://www.w3schools.com/" target="_top">Visit W3Schools.com!</a></p>
+    <a href="test/test.html">Test page </a>
+    <p id="shivani" name="abc">This is sample Paragraph </p>
+    <form>
+        <label for="num1"> Number 1</label>
+        <input type="number" id="num1" name="num1"/><br>
+        <label for="num2"> Number 2</label>
+        <input type="number" id="num2" name="num2"/><br>
+        <input type="button" onclick="addNumbers()" value="Click me "/>
+    </form>
+    <h1 id="result"></h1>
+    <script>
+        var list = [
+            {
+                "name": "Shivani",
+                "age": 25
+            },
+            {
+                "name": "Siddhiraj",
+                "age": 32
+            }
+        ]
+        console.log(document.getElementById("shivani"))
+        function displayResult() {
+            document.getElementById("shivani").innerHTML = "This is modified by javascrpt"
+        }
+        displayResult()
+    </script>
+</body>
+
+</html>
